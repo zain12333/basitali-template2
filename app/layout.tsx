@@ -18,7 +18,7 @@ const jakarta = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://basitali-template1.vercel.app'),
+  metadataBase: new URL('https://basitali-template2.vercel.app'),
   title: 'Basit Ali Aluminum & Glass Work | Lahore Premier Glass & Aluminum Specialists',
   description:
     'Premium Aluminum Windows, Doors, Glass Partitions, Shower Cabins & Emergency Repair Services in Lahore. Call 0320-2740066.',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Basit Ali Aluminum & Glass Work | Lahore',
     description:
       'Premium Aluminum Windows, Doors, Glass Partitions, Shower Cabins & Emergency Repair Services in Lahore. Call 0320-2740066.',
-    url: 'https://basitali-template1.vercel.app',
+    url: 'https://basitali-template2.vercel.app',
     siteName: 'Basit Ali Aluminum & Glass Work',
     images: [
       {
