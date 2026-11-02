@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronLeft, ChevronRight, X, Phone, MessageCircle, MapPin, CheckCircle2 } from 'lucide-react';
+import { X, Phone, MessageCircle, MapPin, CheckCircle2 } from 'lucide-react';
 import { CLIENT_INFO } from '@/lib/data';
 
 export interface PortfolioItem {
@@ -123,7 +123,7 @@ export default function PortfolioCarousel() {
     if (isPaused || selectedItem) return;
     timerRef.current = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % total);
-    }, 5500);
+    }, 2500);
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
@@ -165,25 +165,6 @@ export default function PortfolioCarousel() {
             3-Card Carousel exactly matching image_70bc40a7.png
            ======================================================== */}
         <div className="relative">
-          {/* Subtle Side Navigation Chevrons */}
-          <button
-            type="button"
-            onClick={handlePrev}
-            className="absolute -left-3 sm:-left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-white text-slate-800 shadow-md border border-slate-200/90 flex items-center justify-center transition-all hover:scale-105 active:scale-95 cursor-pointer"
-            aria-label="Previous portfolio project"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-
-          <button
-            type="button"
-            onClick={handleNext}
-            className="absolute -right-3 sm:-right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-white text-slate-800 shadow-md border border-slate-200/90 flex items-center justify-center transition-all hover:scale-105 active:scale-95 cursor-pointer"
-            aria-label="Next portfolio project"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-
           {/* Cards Grid / Slider */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7 items-center">
             {visibleCards.map(({ item, position, originalIndex }) => (

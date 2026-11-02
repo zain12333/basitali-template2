@@ -28,11 +28,11 @@ export default function SmartAutomation() {
              ======================================================== */}
           <div className="lg:col-span-7 xl:col-span-6 space-y-6 sm:space-y-7">
             <h2 className="text-[28px] leading-[36px] lg:text-[40px] lg:leading-[48px] font-bold text-slate-900">
-              Control your pergola with your<br className="hidden sm:inline" /> smartphone
+              Control your Outdoor Roof with your<br className="hidden sm:inline" /> smartphone
             </h2>
 
             <p className="text-slate-500 text-sm sm:text-base leading-relaxed max-w-lg">
-              Operate your pergola with your smartphone, managing lights and side screens, seamlessly integrating with smart home systems such as Alexa and Google Home.
+              Operate your Outdoor Roof with your smartphone, managing lights and side screens, seamlessly integrating with smart home systems such as Alexa and Google Home.
             </p>
 
             <div className="pt-2">
@@ -103,10 +103,10 @@ export default function SmartAutomation() {
                   {/* Pergomatic Official Brand Logo */}
                   <div className="flex items-center justify-center">
                     <Image
-                      src="/assets/products/pergomatic-logo.png"
+                      src="/assets/aistudio/ChatGPT_Image_Sep_30__2026__03_47_25_PM_f9e8138f.png"
                       alt="Pergomatic Logo"
-                      width={110}
-                      height={26}
+                      width={120}
+                      height={100}
                       className="h-5 w-auto object-contain"
                       referrerPolicy="no-referrer"
                     />

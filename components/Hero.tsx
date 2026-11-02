@@ -70,7 +70,7 @@ export default function Hero() {
       </div>
 
       {/* Floating Bottom Navigation Bar — hidden on mobile, visible on lg+ */}
-      <div className="relative z-10 w-full pb-8 sm:pb-12 px-4 hidden lg:flex justify-center">
+      <div className="absolute bottom-0 left-0 right-0 z-10 w-full pb-8 sm:pb-12 px-4 hidden lg:flex justify-center">
         <div className="bg-[#242b32]/85 backdrop-blur-md border border-white/20 rounded-md py-2 px-6 shadow-2xl">
           <div className="flex items-center gap-3 sm:gap-6 text-xs font-bold uppercase tracking-wider text-slate-200 whitespace-nowrap">
             <a
